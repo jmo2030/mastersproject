@@ -1,0 +1,33 @@
+{
+  "id": "./",
+  "name": "MENENGAI JMO ENTERPRISES POS",
+  "short_name": "MENENGAI POS",
+  "description": "Point of sale and inventory management for MENENGAI JMO ENTERPRISES, Kiamunyi.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f1f8fc",
+  "theme_color": "#f1f8fc",
+  "icons": [
+    {
+      "src": "icons/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
