@@ -24,16 +24,15 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - name: Upload app files
+      - name: Prepare app files
+        run: |
+          mkdir public
+          cp index.html styles.css app.js manifest.json sw.js public/
+          cp -R icons public/
+      - name: Upload app artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: |
-            index.html
-            styles.css
-            app.js
-            manifest.json
-            sw.js
-            icons/
+          path: public
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
